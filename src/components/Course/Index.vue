@@ -1,12 +1,14 @@
 <template>
   <div>
     <h1>Get All Course</h1>
-    <div>จํานวนผู้ใช้งาน {{ users.length }}</div>
-    <div v-for="user in users" v-bind:key="user.id">
-      <div>id: {{ user.id }}</div>
-      <div>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</div>
-      <div>email: {{ user.email }}</div>
-      <div>password: {{ user.password }}</div>
+    <div>จํานวนผู้ใช้งาน {{ course.length }}</div>
+    <div v-for="course in course" v-bind:key="course.id">
+      <div>title: {{ course.title }}</div>
+      <div>instructor: {{ course.instructor }}</div>
+      <div>description: {{ course.description }}</div>
+      <div>total_stunent: {{ course.total_student }}</div>
+      <div>status: {{ course.status }}</div>
+      <div>type: {{ course.type }}</div>
       <p>
         <button v-on:click="navigateTo('/course/' + course.id)">
           ดูข้อมูลผู้ใช้
