@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import CourseCreate from '@/components/Course/CreateCourse'
+import CourseIndex from '@/components/Course/Index'
 import CourseEdit from '@/components/Course/EditCourse'
 import CourseShow from '@/components/Course/ShowCourse'
-import CourseIndex from '@/components/Course/Index'
+import CourseCreate from '@/components/Course/CreateCourse'
+
 
 
 Vue.use(Router)
